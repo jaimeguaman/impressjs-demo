@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>ImpressJS Demo - Jaime Guaman</title>
+		<!--[if ie]> <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1"> <![endif]!-->
+		<meta charset="utf-8">
+		<meta name="description" content="Guaman.cl - Impress.js demo">
+		<link href='stylesheets/app.less' rel='stylesheet/less' type="text/css" media="screen">
+		<link href='http://fonts.googleapis.com/css?family=Lobster|Cabin' rel='stylesheet' type='text/css'>
+		<link rel="shortcut icon" href="http://25.media.tumblr.com/avatar_4fe48c0afdf4_16.png">
+		<!--[if ie]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+		<script src="javascripts/less-1.0.41.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="javascripts/demo.js"></script>
+	</head>
+	<body class="class">
+		<div id="tip">
+			<p>Usa la tecla espacio ó las teclas flecha para controlar la presentación</p>
+			<p>Necesitas Chrome ó Firefox</p>
+		</div>
+		<div id="loader">
+			<p id="loader-texto">Obteniendo imágenes desde Flickr...</p>
+		</div>
+		<div id="impress">
+			<div class="step diapo visible" data-x="0" data-y="-2000">
+				<p>
+					Hola! este es un demo de Impress.js: desarrollado por <a href="https://twitter.com/#!/bartaz">@bartaz</a>, permite crear
+					presentaciones dinámicas usando CSS3 y Javascript, al estilo <a href="http://prezi.com">prezi</a>.
+					<br/>
+					Para visualizar correctamente la presentación debes tener <a href="http://google.com/chrome">Google Chrome</a>
+					o <a href="#">Mozilla Firefox</a>
+				</p>
+				<p>
+					Usa la tecla espacio o las teclas flecha para controlar la presentación.
+				</p>
+			</div>
+			<div id="inicio" class="step" data-x="1000" data-y="-2000" data-rotate="50">
+				<p>
+					Empecemos!
+				</p>
+			</div>
+			<div class="step diapo jaime" data-x="1000" data-y="-1000" data-rotate="50">
+				<p>
+					Soy Jaime, tengo 22 años y vivo en el planeta tierra
+				</p>
+			</div>
+			<div class="step diapo jaime" data-x="2400" data-y="-1000" data-rotate-y="50">
+				<p>
+					...Especificamente en Chile
+				</p>
+			</div>
+			<div class="step diapo jaime" data-x="1000" data-y="0" data-rotate-y="0">
+				<p>
+					Mi vida fluye en base a preguntas, preguntas y más preguntas
+				</p>
+			</div>
+			<div class="step diapo jaime" data-x="-5000" data-y="-4000" data-rotate-x="30">
+				<p>
+					Soy programador auto didacta, paso al menos 5 horas al día frente a una pantalla.
+				</p>
+			</div>
+			<div class="step diapo jaime" data-x="-3800" data-y="-3500" data-rotate-x="50" data-rotate-y="30" data-rotate-z="50">
+				<p>
+					El resto del tiempo paso preguntandome el porque de las cosas...
+				</p>
+			</div>
+			<div class="step diapo jaime" data-x="-1500" data-y="-2000" data-rotate-x="30">
+				<p>
+					no considero saber mucho de la vida...
+				</p>
+			</div>
+			<div class="step diapo jaime" data-x="2000" data-y="0" data-scale="2">
+				<p>
+					...pero si de algo estoy seguro es que...
+				</p>
+			</div>
+			<div id="nada" class="step diapo jaime" data-x="6000" data-scale="2" data-y="500" data-rotate-y="30" data-rotate-x="30">
+				<p>
+					No somos nada...
+				</p>
+			</div>
+			<div class="step diapo jaime" data-x="0" data-scale="2" data-y="6000" data-rotate-y="50" data-rotate-x="50">
+				<p>
+					comparado con...
+				</p>
+			</div>
+			<!-- aca vienen las fotitos de flickr vitehhhh -->
+		</div>
+			<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-27439178-1']);
+			_gaq.push(['_setDomainName', 'guaman.cl']);
+			_gaq.push(['_trackPageview']); (function() {
+				var ga = document.createElement('script');
+				ga.type = 'text/javascript';
+				ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(ga, s);
+			})();
+		</script>	
+	</body>
+</html>

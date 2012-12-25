@@ -1,0 +1,159 @@
+@import "perkins.config.less"; // init the awesome perkins
+@baseColor:#7FB060;
+
+
+body { 
+	font:16px Helvetica, Arial, sans-serif; 
+ 
+}
+
+.oscuro{
+	color:#eee;
+	background-color:#111;
+   -webkit-transition-property: background-color,color; 
+   -webkit-transition-duration: 1.5s,0.5s; 
+   -webkit-transition-timing-function: ease-out,ease;
+   -webkit-transition-delay:0.3s,1s;
+
+}
+
+.nice{
+	color:#333;
+	background-color:#eee;
+   -webkit-transition-property: background-color,color; 
+   -webkit-transition-duration: 1.5s,0.5s; 
+   -webkit-transition-timing-function: ease-out,ease;
+   -webkit-transition-delay:0.3s,1s;
+}
+
+.fin{
+	color:#eee;
+	background-color:@red;
+   -webkit-transition-property: background-color,color; 
+   -webkit-transition-duration: 1.5s,0.5s; 
+   -webkit-transition-timing-function: ease-out,ease;
+   -webkit-transition-delay:0.3s,1s;
+}
+
+.sadstorybro{
+	color:#eee;
+	background-color:@blue;
+   -webkit-transition-property: background-color,color; 
+   -webkit-transition-duration: 1.5s,0.5s; 
+   -webkit-transition-timing-function: ease-out,ease;
+   -webkit-transition-delay:0.3s,1s;
+}
+
+
+
+#impress{
+	display:none;
+}
+
+#impress img{
+	.radius(5px);
+	
+}
+
+#loader-texto-malo:before{
+	background:url('../images/loader.gif') no-repeat;
+	width:28px;
+	position:absolute;
+	top:-100px;
+	left:0;
+	z-index:-1;
+	margin:0 auto;
+	height:100px;
+	margin-top:20%;
+	content:"";
+}
+
+#loader-texto::before{
+background: transparent url(../images/loader.gif) no-repeat center center ;
+content: "";
+width: inherit;
+height: 40px;
+position: absolute;
+top: -30px;
+left: 0px;
+margin-top: -11px;
+}
+
+#loader-texto{
+
+	position:relative;
+	width:300px;
+	text-align:center;
+}
+#loader{
+	width:300px;
+	margin:300px auto;
+
+}
+
+#tip{
+	background: @red;
+	opacity:0.9;
+	width:100%;
+	height:105px;
+	position:absolute;
+	bottom:30px;
+	left:0;
+	margin:0 auto;
+	z-index:999;
+	display:none;
+}
+
+#tip p{
+	font: 2.2em 'Lobster', Helvetica, Arial;
+	text-align:center;
+	margin:5px 0;
+	color:#eee;
+	.ts(2px 2px 0 #000);
+
+}
+.step { 
+	width:960px; 
+	height:600px;
+	margin:0 auto;
+}
+
+.diapo{
+	padding:50px;
+}
+
+.visible{
+	background:#ddd;
+	.radius(5px);
+	.bs(0 0 4px #777);
+	color:#555;
+}
+
+.diapo p{
+	font-size:2.5em;
+	text-align:center;
+	.ts(1px 1px 0 #fff);	
+}
+
+
+#inicio{
+	padding:5px;
+}
+
+#inicio p{
+	color:@orange;
+	.ts(1px 1px 0 #fff);
+	font: 10em 'Lobster', Helvetica, Arial;
+}
+
+.jaime p{
+	font-size:5em;
+	font-family:'Cabin',Helvetica, Arial;
+}
+
+
+#nada p{
+color:#eee;
+font: 10em 'Lobster', Helvetica, Arial;
+}
+
